@@ -6,7 +6,7 @@ void main()
 int xc,yc,r,p,x,y;
 int gd,gm;
 detectgraph(&gd,&gm);
-initgraph(&gdriver,&gmode,"c:\\turboc3\\bgi");
+initgraph(&gd,&gm,"c:\\turboc3\\bgi");
 clrscr();
 printf("\nEnter the co-ordinates of center : ");
 scanf("%d %d",&xc,&yc);
@@ -25,13 +25,13 @@ if(p < 0)
 {
 x=x+1;
 y=y;
-p=p+2*(x+1)+1;
+p=p+(2*x)+1;
 }
 else
 {
 x=x+1;
 y=y-1;
-p = p -2*(y+1)+2*(x+1)+1;
+p = p -2*(y)+2*(x)+1;
 }
 
 
